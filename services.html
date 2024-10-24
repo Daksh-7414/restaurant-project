@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styel.css">
+    <!-- <link rel="stylesheet" href="product.css"> -->
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="footer.css">
+    <title>SpiceAura</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-transparent">
+            <div class="container">
+                <a class="navbar-brand head-name d-flex" href="index.html">Spice<span>Aura</span></a>
+                <div class="d-flex justify-content-end align-items-center">
+                    <div>
+                        <button class="btn-cart" id="btn-cart-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                            <span class="cart-badge">2</span>
+                        </button>
+                    </div> 
+                    <div id="nav_btn">
+                        <button class="navbar-toggler" id="nav_btn_toggle" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvas" aria-controls="navbarOffcanvas">
+                            <!-- <span class="navbar-toggler-icon"></span> -->
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="navbarOffcanvas" aria-labelledby="navbarOffcanvasLabel">
+                    <div class="offcanvas-header justify-content-evenly">
+                        <h4 class="offcanvas-title head-name" id="navbarOffcanvasLabel"><span>Spice</span>Aura</h4>
+                        <!-- <button type="button" data-bs-dismiss="offcanvas" aria-label="Close">
+                            <i class="fa-solid fa-square-xmark"></i>
+                        </button> -->
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link " href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="about.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " href="product.html">Menu</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="services.html">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="navbar-actions">
+                            <button class="btn-cart" id="btn-cart-1"  type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas" aria-controls="cartOffcanvas">
+                                <!-- <i class="fas fa-shopping-cart"></i> -->
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-shopping-bag"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+                                <span class="cart-badge">0</span>
+                            </button>
+                            <button class="btn btn-reservation" type="button">
+                                Book Reservation
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="cartOffcanvasLabel">Shopping Cart</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- Add your cart content here -->
+                <p>Your cart items will appear here.</p>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="services">
+            <div class="services-header  mb-4 text-center">
+                <h1 class="display-2">Services</h1>
+                <span class="d-flex justify-content-center gap-2 pt-2">
+                    <h5><a href="index.html">Home</a></h5>
+                    &nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-move-right"><path d="M18 8L22 12L18 16"/><path d="M2 12H22"/></svg>
+                    &nbsp;<h5>Services</h5>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section class="ser_card">
+        <div class="container py-5">
+            <!-- <div class="pb-5">
+                <h1 class="h2 text-center">What We Can Do For You</h1>
+                <p>Elevate events with SpiceAura , adding delectable touches to special moments.</p>
+            </div> -->
+            <div class="row g-4">
+                <!-- Community Engagement Card -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <img src="images/online-shopping.png" alt="Community Icon" />
+                        </div>
+                        <h3>Easy Online Ordering</h3>
+                        <p class="">Proud community members, engaging in initiatives that uplift neighbors. Your patronage matters.</p>
+                        <a href="#" class="btn">View Details →</a>
+                    </div>
+                </div>
+                
+                <!-- Table Reservations Card -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <img src="images/table.png" alt="Table Icon" />
+                        </div>
+                        <h3>Table Reservations</h3>
+                        <p>Elevate events with Fastfood TNC catering, adding delectable touches to special moments.</p>
+                        <a href="#" class="btn">View Details →</a>
+                    </div>
+                </div>
+                
+                <!-- Catering Card -->
+                <div class="col-md-5 col-lg-4">
+                    <div class="service-card">
+                        <div class="icon-wrapper">
+                            <img src="images/catering.png " alt="Catering Icon" />
+                        </div>
+                        <h3>Catering for Occasion</h3>
+                        <p>Elevate events with Fastfood TNC catering, adding delectable touches to special moments.</p>
+                        <a href="#" class="btn">View Details →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-contact">
+        <div class="container">
+            <div class="fot-card row">
+                <!-- Phone Contact -->
+                <div class="ps-3 col-lg-4 col-md-6">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/phone-call.png" alt="phone">
+                        </div>
+                        <div class="contact-content">
+                            <h4>Call Us:</h4>
+                            <p>+88 (00) 569 879 845</p>
+                            <!-- <p>+09 (88) 234 847 468</p> -->
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Email Contact -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/mail.png" alt="email">
+                        </div>
+                        <div class="contact-content">
+                            <h4>Email Now:</h4>
+                            <p>demo@yourmail.com</p>
+                            <!-- <p>info@yourdomain.com</p> -->
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Location Contact -->
+                <div class="fot-card3 col-lg-4 col-md-6">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <img src="images/location.png" alt="location">
+                        </div>
+                        <div class="contact-content">
+                            <h4>Our Location:</h4>
+                            <p>Ajmer, Rajasthan, 305001</p>
+                            <!-- <p>Virginia(VA), 24553</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5 copy">
+                <div class="col-12">
+                    <p class="text-center">Copyright © 2024 SpiceAura Restaurant | Designed by Daksh & Khushi</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

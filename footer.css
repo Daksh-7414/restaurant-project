@@ -1,0 +1,142 @@
+.footer-contact {
+    background-color: #1a1a1a;
+    /* background-image: url("images/section_back.png");
+    background-position: 50%;
+    background-size: cover; */
+    /* padding: 80px 0; */
+    padding-top: 80px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+/* .footer-contact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(59, 42, 27, 0.97);
+    z-index: -1;
+} */
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    /* margin-bottom: 30px; */
+}
+
+.contact-icon {
+    width: 100px;
+    height: 100px;
+    border: 2px dashed rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.contact-icon img {
+    width: 42px;
+    height: 42px;
+    filter: brightness(0) invert(1);
+}
+
+.contact-content h4 {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.contact-content p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+}
+
+.copy div p{
+    color: var(--text-color);
+}
+
+@media (max-width: 991px) {
+    .contact-item {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 576px) {
+    .fot-card{
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer-contact {
+        padding: 60px 0;
+    }
+
+    .contact-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .contact-icon img {
+        width: 35px;
+        height: 35px;
+    }
+
+    .contact-content h4 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+
+    .contact-content p {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 786px) {
+    .row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .col-lg-4.col-md-6 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .contact-item {
+        width: 100%;
+        max-width: 400px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 24px;
+        margin-bottom: 30px;
+    }
+
+    .contact-icon {
+        width: 100px;
+        height: 100px;
+    }
+
+    .contact-icon img {
+        width: 55px;
+        height: 55px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    .fot-card3{
+        padding-top: 20px;
+    }
+}
